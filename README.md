@@ -34,7 +34,6 @@ After gathering credentials, captured data will be shown as a notification on th
 ---
 
 #### Smtp Setup (optional)
----
 You need to edit the /etc/ssmtp/ssmtp.conf and change it with your configuration.
 For example, configuration for GMAIL (Less secure apps enabled):
 
