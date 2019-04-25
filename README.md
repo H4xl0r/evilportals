@@ -40,7 +40,7 @@ For example, configuration for GMAIL (Less secure apps enabled):
 
 
 root@Pineapple:/etc/ssmtp# cat ssmtp.conf
-
+```
 #
 # /etc/ssmtp.conf -- a config file for sSMTP sendmail.
 #
@@ -75,6 +75,7 @@ AuthPass=your_gmail_password
 
 # Use this RSA certificate.
 #TLSCert=/etc/ssl/certs/ssmtp.pem
+```
 ---
 
 #### Screenshots
