@@ -4,7 +4,7 @@ require_once('helper.php');
 function increment_browser($browser)
 {
     try {
-        $sqlite = new \SQLite3('/landingpage.db');
+        $sqlite = new \SQLite3('/tmp/landingpage.db');
     } catch (Exception $e) {
         return false;
     }
