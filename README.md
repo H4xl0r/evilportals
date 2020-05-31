@@ -34,8 +34,18 @@ Finally on the WiFi Pineapple web interface, start the Evil Portal module and th
 After gathering credentials, captured data will be shown as a notification on the WiFi Pineapple web interface, and also stored on the Tetra at `/root/evilportal-logs/portal-login.txt` or on the Nano at `/sd/evilportal-logs/portal-login.txt` with additional profiling.
 
 ---
+### Token Portals
+Token Portals are Basic Portals with ability to generate tokens and send those via mail, those user based tokens will be request later to login. (sure will still ask for email and password !).
 
-#### Smtp Setup (optional)
+## Requires you to setup:
+
+--> smtp settings on your pinapple. (smtp server infos needed)
+
+--> edit details of sender and subject of the mail in the MyPortal.php. (The sender and Subject for the user token mail)
+
+--> if needed replace the template.html (email template with your own | the template needs to have a string "TOKEN" !)
+
+#### Smtp Setup
 You need to edit the /etc/ssmtp/ssmtp.conf and change it with your configuration.
 For example, configuration for GMAIL (Less secure apps enabled):
 
@@ -78,6 +88,14 @@ AuthPass=your_gmail_password
 #TLSCert=/etc/ssl/certs/ssmtp.pem
 ```
 ---
+
+
+# Edit Email details matching your needs:
+```
+$sub = "Google FI - Your WIFI-Token !\nContent-Type: text/html"; //Subject of the mail & html format info just replace "Google FI - Your WIFI-Token !"
+$sender = "your_email@gmail.com or your_fake_sender_email@gmail.com"; //Sender of the mail
+```
+
 
 #### Screenshots
 
