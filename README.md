@@ -5,7 +5,9 @@
 
 [Evil Portals](https://github.com/kbeflo/evilportals) is a collection of portals that can be loaded into the Evil Portal module and can be used for phishing attacks against WiFi clients in order to obtain credentials or infect the victims with malware using the [Hak5](https://hak5.org/) [WiFi Pineapple](https://wifipineapple.com/) [Tetra](http://hakshop.myshopify.com/products/wifi-pineapple?variant=11303845317) and [Nano](http://hakshop.myshopify.com/products/wifi-pineapple?variant=81044992).
 
-This project requires you to install [Evil Portal](https://github.com/frozenjava/EvilPortalNano) captive portal module created by [frozenjava](https://github.com/frozenjava). Install on the Pineapple, Modules -> Manage Modules -> Get Modules from WiFiPineapple.com -> Evil Portal 3.1.
+This project requires you to install [Evil Portal](https://github.com/frozenjava/EvilPortalNano) captive portal module created by [frozenjava](https://github.com/frozenjava). Install on the Pineapple, Modules -> Manage Modules -> Get Modules from WiFiPineapple.com -> Evil Portal 3.1. * 
+
+*The Token Portals need EvilPortal version (4.B) that supports sendmail and tokens !
 
 ---
 
