@@ -45,7 +45,6 @@ class MyPortal extends Portal
           		$dtoken = file_get_contents("{$logPath}/$mac.txt"); //read auth file
            		if($rtoken == $dtoken) {       
             			$this->execBackground("notify $mac' Login:'$rtoken' IP:'$ip"); //notify panel 
-           			$this->execBackground("writeLog $mac' - '$rtoken'/n"); //still needed ?
            			parent::handleAuthorization();
             			unlink("{$logPath}/$mac:mail.txt");
             			unlink("{$logPath}/$mac.txt");
