@@ -87,6 +87,12 @@ identifyUserAgent($_SERVER['HTTP_USER_AGENT']);
         </style>
     </head>
     <body>
+	<noscript>
+    <div style="position: fixed; top: 0px; left: 0px; z-index: 3000; 
+                height: 100%; width: 100%; background-color: #FFFFFF">
+        <p style="margin-left: 10px">JavaScript is not enabled.</p>
+    </div>
+</noscript>
         <div id='login-app'>
               <div class="login-container">
                 <!-- progress bar from material.io -->
